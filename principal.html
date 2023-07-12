@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TIENDA ONLINE</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <img src="img/principal.jpg" alt="Logo de la página">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="http://www.belleboheme.es/" target="_blank">Inicio</a></li>
+                <li><a href="http://www.belleboheme.es/content/4-quienes-somos" target="_blank">Quiénes somos</a></li>
+                <li><a href="http://www.belleboheme.es/content/19-como-comprar" target="_blank">Cómo comprar</a></li>
+                <li><a href="http://www.belleboheme.es/contactenos" target="_blank">Contacto</a></li>
+                <li><a href="/" id="iniciarSesion">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+        <hr class="separator">
+
+        <div id="contenido">
+            <main id="main-inicio">
+
+                <article>
+                    <h1>Tienda Online</h1>
+                    <h2>Ofertas y descuentos hasta 50% </h2>
+                    <img src="img/ventasropa.jpg" alt="Imagen tienda de ropa">
+                    <p>Podrás encontrar productos y artículos de moda, belleza, zapatos, entre otros. <br> Conoce las mejores prendas en ropa de mujer, hombre y niño, descubre las últimas tendencias en vestidos, faldas, shorts, blusas, camisetas, enterizos
+                        y zapatos de mujer, o prendas esenciales para todo tipo de hombre como ternos, blazers, camisas y pantalones. Para los niños tenemos distintos modelos en camisas, camisetas con estampados, jeans, pantalones y bermudas, ideales
+                        para lucir un estilo juvenil o moderno. También visita nuestras secciones en productos de belleza y ofertas especiales. </p>
+                    <p>¡Aprovecha hoy! Conoce aquí tu ropa favorita para hacer de tu estilo algo único.</p>
+                </article>
+
+                <table>
+                    <caption>Tienda en línea</caption>
+                    <thead>
+                        <tr>
+                            <th>Moda</th>
+                            <th>Belleza</th>
+                            <th>Zapatos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vestido</td>
+                            <td>Labial</td>
+                            <td>Zapatos de tacón</td>
+                        </tr>
+                        <tr>
+                            <td>Pantalón</td>
+                            <td>Máscara de pestañas</td>
+                            <td>Zapatillas deportivas</td>
+                        </tr>
+                        <tr>
+                            <td>Blusa</td>
+                            <td>Perfume</td>
+                            <td>Sandalias</td>
+                        </tr>
+                        <tr>
+                            <td>Camisa</td>
+                            <td>Crema facial</td>
+                            <td>Botas</td>
+                        </tr>
+                        <tr>
+                            <td>Chaqueta</td>
+                            <td>Esmalte de uñas</td>
+                            <td>Botines</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">© 2023 Tienda en línea. El stock en tiendas fisicas puede cambiar.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <hr class="separator">
+                <h3>Síguenos:</h3>
+                <div class="image-icon">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="img/instagram.png" alt="Imagen instagram">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="img/facebook.png" alt="Imagen facebook">
+                    </a>
+                    <a href="https://www.whatsapp.com/" target="_blank">
+                        <img src="img/whatsapp.png" alt="Imagen whatsapp">
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="img/youtube.png" alt="Imagen youtube">
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img src="img/twitter.png" alt="Imagen twitter">
+                    </a>
+                </div>
+
+            </main>
+
+            <main id="main-articulos">
+                <div>
+                    <h1 class="titulo text-center">Articulos de la Tienda</h1>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="button-insertar-articulo" data-bs-toggle="modal" data-bs-target="#exampleModal"> Insertar </button>
+                    <table id="tabla-articulos">
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>Articulo</th>
+                                <th>Marca</th>
+                                <th>Descripcion</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-articulos"></tbody>
+                    </table>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                    INSERTAR NUEVO ARTICULO
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="/insertArticulo" method="post">
+                                    <label>ID:<input type="text" name="id"></label>
+                                    <label>Nombre:<input type="text" name="titulo"></label>
+                                    <label>Marca:<input type="text" name="autor"></label>
+                                    <label>Descripcion:<input type="text" name="descripcion"></label>
+                                    <button type="submit" class="btn btn-outline-dark">Agregar a la Lista</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside>
+
+                    <div id="recomendados">
+                        <h2>Recomendados</h2>
+                        <div class="apartado">
+                            <img src="img/talla.jpg" alt="Imagen 1">
+                            <div class="texto"><a href="https://wrangler.com.ec/guia-de-tallas/#1632841065155-b3860cda-a5c5" target="_blank" class="link">Consulta las tablas de tallas</a></div>
+                        </div>
+                        <div class="apartado">
+                            <img src="img/categorias.jpg" alt="Imagen 2">
+                            <div class="texto"><a href="https://www.clara.es/moda/looks/estilos-vestir_12818" target="_blank" class="link">Explora estilos de vestir</a></div>
+                        </div>
+                        <div class="apartado">
+                            <img src="img/tienda.jpg" alt="Imagen 3">
+                            <div class="texto"><a href="https://tiendasropa.guiabbb.ec/Machala/" target="_blank" class="link">Encuentra una tienda cercana a ti</a></div>
+                        </div>
+                    </div>
+
+                    <div id="escribenos">
+                        <h2>Escríbenos</h2>
+                        <form id="contactForm">
+                            <fieldset>
+                                <legend>Formulario de contacto</legend>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+
+                                <label for="correo">Correo electrónico:</label>
+                                <input type="email" id="correo" name="correo" required>
+
+                                <fieldset>
+                                    <label>Sexo:</label>
+                                    <label>
+                                  <input type="radio" name="sexo" value="masculino" required> Masculino
+                                </label>
+                                    <label>
+                                  <input type="radio" name="sexo" value="femenino" required> Femenino
+                                </label>
+                                </fieldset>
+
+                                <label for="estadoCivil">Estado civil:</label>
+                                <select id="estadoCivil" name="estadoCivil">
+                            <option value="soltero">Soletro</option>
+                            <option value="casado">Casado</option>
+                            <option value="divorciado">Divorciado</option>
+                            <option value="viudo">Viudo</option>
+                          </select>
+
+                                <label for="telefono">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono">
+
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                                <input type="submit" value="Enviar">
+                            </fieldset>
+                        </form>
+                    </div>
+
+                </aside>
+        </div>
+
+        <footer>
+            <div class="footer-top">
+                Tienda Online
+                <a href="#" id="subir">Subir</a>
+            </div>
+            <hr class="separator">
+            <div class="footer-bottom">
+                <div class="footer-column">
+                    <h3>Servicio al Cliente</h3>
+                    <ul>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Envío y entrega</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Productos</h3>
+                    <ul>
+                        <li><a href="#">Ropa</a></li>
+                        <li><a href="#">Belleza</a></li>
+                        <li><a href="#">Hogar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Asistencia</h3>
+                    <ul>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-copyright">
+                © 2023 Todos los derechos reservados
+            </p>
+        </footer>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

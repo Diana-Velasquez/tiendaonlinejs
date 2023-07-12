@@ -1,0 +1,130 @@
+/* Body */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #e1e2e7;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Encabezado */
+
+header img {
+    max-width: 80%;
+    align-items: center;
+    display: block;
+    margin-left: 150px;
+}
+
+
+/* Barra de navegación */
+
+nav {
+    background-color: #5b5a5a;
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 5;
+    padding: 5;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border: 1px solid #5b5a5a;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #9d8e8e;
+}
+
+
+/*Formulario de registro*/
+
+#main {
+    align-items: center;
+    margin: 25px auto;
+    max-width: 80%;
+    display: block;
+}
+
+#cont-form {
+    margin: 30px;
+}
+
+#main form {
+    background-color: #f7f6f6;
+    text-align: center;
+    padding: 15px 30px;
+    box-shadow: 0 5px 10px rgba(148, 170, 231, 0.5);
+    border-radius: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+#main form h2 {
+    text-align: center;
+    color: #5d5a5a;
+    font-weight: bold;
+}
+
+#cont-form-sesion {
+    display: block;
+}
+
+#cont-form-sesion label {
+    padding-top: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#cont-form-register {
+    display: none;
+}
+
+#cont-form-register label {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#main form label {
+    width: 100%;
+}
+
+#main form input {
+    outline: none;
+    border: none;
+    background-color: #f3eef4;
+    border-bottom: solid 2px #bb7bf0;
+    width: 100%;
+    padding: 10px;
+}
+
+#main form button {
+    color: #100f0f;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #f2bfc2;
+}

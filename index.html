@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA ONLINE</title>
+    <link rel="stylesheet" href="/login/login.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="img">
+            <img class="" src="/img/principal.jpg" alt="encabezado">
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Tienda Online</a>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="http://www.belleboheme.es/" target="_blank">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://www.belleboheme.es/content/4-quienes-somos" target="_blank">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://www.belleboheme.es/contactenos" target="_blank">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="iniciarSesion">Iniciar Sesion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="registrar">Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div id="cont-form-sesion">
+            <form action="/login" method="post" id="form-sesion">
+                <h2>Iniciar Sesion</h2>
+                <label>Correo:<input type="email" name="correo" required/></label>
+                <label>Contraseña:<input type="password" name="password" required/></label>
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+
+        <div id="cont-form-register">
+            <form action="/insert" method="post" id="form-register">
+                <h2>Registrarse</h2>
+                <label>Nombre:<input type="text" name="nombre" required/></label>
+                <label>Apellido:<input type="text" name="apellido" required/></label>
+                <label>Correo:<input type="email" name="correo" required/></label>
+                <label>Contraseña:<input type="password" name="password" required/></label>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+
+    </main>
+    <footer></footer>
+</body>
+
+<script src="/login/login.js"></script>
+
+</html>
